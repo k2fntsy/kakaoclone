@@ -8,9 +8,10 @@
       src="https://kit.fontawesome.com/01bb426263.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | KAKAO CLONE</title>
   </head>
-  <body>
+  <body class="chats__body">
     <div class="status-bar">
       <div class="status-bar__column">
         <div class="span status-bar__clock">13:36</div>
@@ -26,7 +27,7 @@
     <header class="header">
       <div class="header__header-column">
         <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left fa-2x"></i>
+          <i class="fas fa-arrow-left"></i>
         </a>
         <h1 class="header__title">Best Friend</h1>
       </div>
@@ -34,55 +35,53 @@
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
-      </div>
-      <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-bars"></i>
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday,November 11, 2019</span>
         <li class="incoming-message message">
-          <img src="images/Pic0001.jpg" class="g-avatar message__avatar" />
+          <img src="images/Pic0001.jpg" class="m-avatar message__avatar" />
           <div class="message__content">
-            <span class="message__author">Yunmi</span>
-            <div class="message__bubble">
+            <span class="message__bubble">
               Congrats! You are Billionaire, Now!
-            </div>
+            </span>
+            <span class="message__author">Yunmi</span>
           </div>
           <span class="message__timestamp"></span>
         </li>
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <span class="message__timestamp"></span>
           <div class="message__content">
-            <div class="message__bubble">
+            <span class="message__bubble">
               Yes, I am!
-            </div>
+            </span>
           </div>
         </li>
       </ul>
-      <div class="chat__write">
-        <div class="chat__write-column">
-          <i class="far fa-plus-square"></i>
-        </div>
-        <div class="chat__write-column">
-          <input
-            type="text"
-            placeholder="Send Message..."
-            class="chat__write-input"
-          />
-        </div>
-        <div class="chat__write-column">
-          <span class="chat__wirte-icon">
-            <i class="far fa-smile"></i>
-          </span>
-          <span class="chat__wirte-icon">
-            <i class="fas fa-microphone-alt"></i>
-          </span>
-        </div>
-      </div>
     </main>
+    <div class="chat__write">
+      <div class="chat__write-column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__write-column">
+        <input
+          type="text"
+          placeholder="Send Message..."
+          class="chat__write-input"
+        />
+      </div>
+      <div class="chat__write-column">
+        <span class="chat__wirte-icon">
+          <i class="far fa-smile"></i>
+        </span>
+        <span class="chat__wirte-icon">
+          <i class="fas fa-microphone-alt"></i>
+        </span>
+      </div>
+    </div>
   </body>
 </html>
